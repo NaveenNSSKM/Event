@@ -125,7 +125,7 @@ nav ul li a:hover {
 /* Join Button */
 .join-btn {
   background: #ff6584;
-  color: #fff;
+  color: #000000;
   padding: 8px 18px;
   border: none;
   border-radius: 20px;
@@ -358,7 +358,7 @@ nav ul li a:hover {
   display: inline-block;
   padding: 12px 30px;
   background-color: var(--secondary-color);
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: bold;
   border-radius: 30px;
   transition: background 0.3s;
@@ -538,6 +538,175 @@ nav ul li a:hover {
 }
 
 
+/* form */
+
+ /* form */
+
+    .b2b-form-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 60px auto;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+
+  /* Border and outline feel using subtle stroke */
+  border: 1px solid rgba(0, 0, 0, 0.08);
+
+  /* Elegant shadow */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08), 0 4px 8px rgba(0, 0, 0, 0.04);
+
+  /* Optional: distinct top-right and bottom-right curves if desired */
+  border-top-right-radius: 84px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 84px;
+  animation: down 0.6s ease-out; /* You can adjust the duration and timing */
+
+}
+
+@keyframes down {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Left Side */
+.left {
+  flex: 1;
+   
+  color: rgb(0, 0, 0);
+  padding: 40px;
+  border-radius:none;
+}
+
+.left h1 {
+  font-size: 28px;
+  margin-bottom: 50px;
+}
+
+.left p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Right Side */
+.right {
+  flex: 1;
+  padding: 40px;
+  background: linear-gradient(125deg, #fde7f5, #e6e7ff);
+
+ 
+}
+
+.right h2 {
+  font-size: 24px;
+  margin-bottom: 25px;
+  color: rgb(0, 0, 0);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: black;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background-color: transparent;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  color: #333;
+}
+
+input::placeholder {
+  color: #ffffff;
+  font-style: italic;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 2px solid #342c19;
+  box-shadow: 0 1px 0 0 #342c19;
+}
+
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.checkbox input {
+  margin-right: 10px;
+}
+
+.checkbox label {
+  font-size: 14px;
+}
+
+.checkbox a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+button {
+ 
+  width: 80%;
+  padding: 12px;
+  background-color: #ffffff;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: transparent;
+  border: 1px solid black;
+  color: rgb(0, 0, 0);
+  outline: 1px solid rgb(0, 0, 0); /* optional */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .b2b-form-wrapper {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    padding: 30px 20px;
+    margin-bottom: 20px; /* Add space between left and right sides */
+  }
+
+  .left {
+    margin-right: 0; /* Ensure there's no margin on the right side of the left element */
+  }
+
+  .right {
+    margin-left: 0; /* Ensure there's no margin on the left side of the right element */
+  }
+}
+
 
 /* speaker con */
 
@@ -567,7 +736,7 @@ nav ul li a:hover {
 .event-button {
   background-color: #ff6584;
   background-image: url(https://html.themegenix.com/evente/assets/img/about/flower.png);
-  color: #fff;
+  color: #000000;
   font-size: 0.875rem; /* Smaller font for a badge look */
   font-weight: 600;
   padding: 0.4rem 1rem; /* Compact padding */
@@ -819,7 +988,34 @@ nav ul li a:hover {
 
         /* events details */
 
-    
+    .event-heading {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.event-heading h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #1a202c;
+}
+
+.event-heading h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #2d3748;
+}
+
+.event-heading p {
+  font-size: 1.1rem;
+  color: #000000;
+  max-width: 600px;
+  margin: 0 auto;
+  
+}
+
+
 
         /* Header Section Styles */
         .header-section {
@@ -1157,10 +1353,53 @@ nav ul li a:hover {
         <i class="fas fa-map-marker-alt"></i>
         <p>Los Angeles Convention Center, CA</p>
       </div>
-      <a href="#" class="register-btn">Register Now</a>
+      <a href="#join" class="register-btn">Register Now</a>
     </div>
    
   </section>
+
+
+
+  <!----------------form-------------->
+
+   <div id="join" class="b2b-form-wrapper">
+    <!-- Left Info Side -->
+    <div class="left">
+      <h1>Let's Connect and Collaborate</h1>
+      <p style="margin-bottom: 10px;">B2B go-to-market strategies have evolved from MQL-based motions to Account-Based Marketing (ABM) to today’s more sophisticated Buying Groups approach</p>
+    <p style="margin-bottom: 10px;">But which strategy is right for your business, and how do you ensure sales and marketing align in a way that maximizes revenue impact?</p>
+  <p>In this expert-led webinar, you’ll learn how to shift from a reactive, lead-based model to proactive, engagement-savvy account-based and Buying Groups strategies, leveraging technology, intent data, and marketing insights to drive more pipeline and accelerate revenue.</p> 
+  </div>
+
+    <!-- Right Form Side -->
+    <div class="right">
+      <h2>Register to Attend</h2>
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email"  required />
+        </div>
+        <div class="form-group">
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" name="name"  required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number *</label>
+          <input type="tel" id="phone" name="phone"  required />
+        </div>
+        <div class="form-group">
+          <label for="company">Company *</label>
+          <input type="text" id="company" name="company"  required />
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="policy" required />
+          <label for="policy">I agree to the <a href="#">Privacy Policy</a></label>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
 
  <!----------------------------------speaker con---------------------------------------------->
  <div class="con">
@@ -1308,6 +1547,15 @@ nav ul li a:hover {
     <!---------------------------------Event Details----------------------------------------------->
 
      <div class="event">
+
+      <section class="event-heading">
+        <p class="event-button">Blog Post</p>
+  <h1>Insights from Business Experts Meetup</h1>
+  
+  <p>Like previous year this year we are arranging world marketing
+summit 2025. Its the gathering of all the big</p>
+</section>
+
         <div class="cards-container">
             <!-- Card 1 -->
             <div class="card">
@@ -1402,7 +1650,7 @@ nav ul li a:hover {
     <a href="#" style="margin: 0 15px;font-weight: bolder;">Home</a>
     <a href="#" style="margin: 0 15px;font-weight: bolder;">Schedule</a>
     <a href="#" style="margin: 0 15px;font-weight: bolder;">Tickets</a>
-    <a href="#" style="margin: 0 15px;font-weight: bolder;">Register</a>
+    <a href="#join" style="margin: 0 15px;font-weight: bolder;">Register</a>
     <a href="#" style="margin: 0 15px; font-weight: bolder;">Contact Us</a>
   </div>
 
@@ -1419,6 +1667,23 @@ nav ul li a:hover {
     <p>&copy; 2025 EventX. All rights reserved.</p>
   </div>
 </footer>
+
+
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent default submission
+
+    // Optionally process the form data here (e.g., send to server)
+
+    // Reset the form
+    this.reset();
+
+    // Redirect after a short delay (optional, e.g., to show a success message)
+    setTimeout(() => {
+      window.location.href = "thank.html";
+    }, 500); // 0.5 second delay
+  });
+</script>
 
 
 </body>
