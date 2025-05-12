@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background: url('https://expert-themes.com/wp/konfer/wp-content/uploads/2025/03/1.png') center/cover no-repeat;
+    min-height: 100vh;
+  }
+  
+  /* Header */
+  .header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+  }
+  .logo span {
+    color: orange;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  .nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .search-btn,
+  .menu-btn,
+  .ticket-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  .ticket-btn {
+    background: white;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  
+  /* Banner */
+  .banner {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 30px;
+    background: rgba(0, 0, 0, 0.5);
+    flex-wrap: wrap;
+  }
+  
+  .banner-content {
+    max-width: 60%;
+  }
+  .speaker-label {
+    font-family: cursive;
+    font-size: 24px;
+  }
+  .guest-role {
+    color: yellow;
+    margin-bottom: 10px;
+  }
+  .main-title {
+    font-size: 48px;
+    font-weight: bold;
+  }
+  .main-title span {
+    font-weight: normal;
+  }
+  .avatars {
+    margin: 15px 0;
+  }
+  .avatars img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: -10px;
+    border: 2px solid white;
+  }
+  .location {
+    margin: 10px 0;
+  }
+  .register-btn {
+    background: yellow;
+    color: black;
+    padding: 12px 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  /* Timer */
+  .timer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  .timer div {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .timer span {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .timer small {
+    font-size: 12px;
+    color: #ddd;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .banner {
+      flex-direction: column;
+    }
+    .banner-content {
+      max-width: 100%;
+    }
+    .nav {
+      justify-content: center;
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+  
